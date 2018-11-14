@@ -1,0 +1,22 @@
+//
+//  LogTest.pch
+//  LogTest
+//
+//  Created by YanZhang on 2018/11/13.
+//  Copyright © 2018 yan zhang. All rights reserved.
+//
+
+#ifndef LogTest_pch
+#define LogTest_pch
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+//#define ProductionEnv
+
+#ifdef ProductionEnv
+static const DDLogLevel ddLogLevel = DDLogLevelOff;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelDebug;
+#endif
+
+#endif /* LogTest_pch */
