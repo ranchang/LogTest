@@ -11,6 +11,7 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+    	printf("hello2008dev2\n");
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
